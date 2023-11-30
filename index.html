@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장우영 (Jang Wooyoung)</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/img/favicon.png"
+    />
+  </head>
+  <body>
+    <main id="app">
+      <section class="section-intro">
+        <header id="header">
+          <h1 class="txt-invisible">Portfolio</h1>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about" class="list-link">About</a></li>
+              <li><a href="#project" class="list-link">Project</a></li>
+              <li><a href="#contact" class="list-link">Contact</a></li>
+              <li>
+                <a
+                  href="https://github.com/HyeRrin/portfolio"
+                  class="list-link btn-code"
+                  >code</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="bar-bg">
+            <span class="bar-ing"></span>
+          </div>
+        </header>
+
+        <div class="cont-intro">
+          <a name="info"></a>
+          <img src="src/img/github2.png" alt="프로필 이미지" />
+          <div>
+            <p class="txt-title"></p>
+            <a href="#about" class="btn-more">More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <a name="about"></a>
+        <h2>About.</h2>
+        <div class="cont-about">
+          <div class="slide-container">
+            <div class="slide-album">
+              <div class="slide-images">
+                <img src="src/img/github.png" alt="내 사진" />
+              </div>
+            </div>
+          </div>
+          <div class="info-about">
+            <dl class="txt-about">
+              <div>
+                <dt>이름</dt>
+                <dd>장우영</dd>
+              </div>
+              <div>
+                <dt>생년월일</dt>
+                <dd>미공개</dd>
+              </div>
+              <div>
+                <dt>거주지</dt>
+                <dd>경기도 연천군</dd>
+              </div>
+              <div>
+                <dt>학교/전공</dt>
+                <dd>미공개</dd>
+              </div>
+            </dl>
+            <div class="btn-about">
+              <button class="btn-open" type="button">
+                <img src="src/img/icon-diary.png" alt="" />취미
+              </button>
+              <button class="btn-open" type="button">
+                <img src="src/img/icon-heart.png" alt="" />성격
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-project">
+        <a name="project"></a>
+        <h2>Project.</h2>
+        <article class="box-project">
+          <div>
+            <img
+              class="img-project"
+              src="src/img/123.webp"
+              alt="첫번째 프로젝트 이미지"
+            />
+          </div>
+          <div class="txt-project">
+            <h3>Rori System</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>2023.11</dd>
+              <dt>설명</dt>
+              <dd>로블록스라는 플랫폼에 있는 RP에서 디스코드에서 쉽게 사용 할 수 있게 만든 시스템 이에요.</dd>
+              <dt>사용 기술</dt>
+              <dd>Nodejs, Express, Lua</dd>
+            </dl>
+          </div>
+        </article>
+
+
+      <footer id="footer">
+        <a name="contact"></a>
+        <div class="box-footer">
+          <h2>Contact.</h2>
+          <ul class="link-sns">
+            <li>
+              <a href="https://github.com/Sleepy770"
+                ><img
+                  class="img-github"
+                  src="src/img/icon-github.png"
+                  alt="깃허브 주소"
+                />github</a
+              >
+            </li>
+          </ul>
+          <p>© 2023 - TEAM Codeit</p>
+        </div>
+      </footer>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>취미</h3>
+          <h4>다이어리 꾸미기</h4>
+          <img src="https://jaglo.net/wp-content/uploads/2021/03/%EC%BD%94%EB%94%A9-%EC%82%AC%EC%9D%B4%ED%8A%B8-1-1024x576.jpg" alt="다이어리 이미지" />
+          <p>
+            취미는 코딩이에요! 뭐 전 늘 그렇죠...
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>성격</h3>
+          <h4>무작정 시도 하는 성격 이에요.</h4>
+          <img src="/src/img//1701347923782.png" alt="책상 이미지" />
+          <p>
+            계획은 안세우고 바로 뛰어드는편 이에요. 그래서 실패할때도 있고 성공할때도 있어요. 
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <button onclick="moveToTop()" class="btn-moveTop"></button>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
